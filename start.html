@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/Bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="./assets/CSS/startPage-style.css">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/zoom.js"></script> <!-- for Zoom picture -->
+
+    <title>Introduction</title>
+
+</head>
+
+<body>
+    <div class="container">
+        <!-- Audio player with controls -->
+        <audio id="sound" src="./assets/music/music3.mp3" preload="auto" autoplay></audio>
+
+        <!-- Circles with different sizes and colors 
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>-->
+
+        <!-- Final design that appears after the circles disappear -->
+        <div class="final-design">
+            <div class="design-container">
+
+                <svg class="setting-icon setting-icon1" width="120px" fill="white" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512">
+                    <path
+                        d="M495.9 166.6c3.2 8.7 .5 18.4-6.4 24.6l-43.3 39.4c1.1 8.3 1.7 16.8 1.7 25.4s-.6 17.1-1.7 25.4l43.3 39.4c6.9 6.2 9.6 15.9 6.4 24.6c-4.4 11.9-9.7 23.3-15.8 34.3l-4.7 8.1c-6.6 11-14 21.4-22.1 31.2c-5.9 7.2-15.7 9.6-24.5 6.8l-55.7-17.7c-13.4 10.3-28.2 18.9-44 25.4l-12.5 57.1c-2 9.1-9 16.3-18.2 17.8c-13.8 2.3-28 3.5-42.5 3.5s-28.7-1.2-42.5-3.5c-9.2-1.5-16.2-8.7-18.2-17.8l-12.5-57.1c-15.8-6.5-30.6-15.1-44-25.4L83.1 425.9c-8.8 2.8-18.6 .3-24.5-6.8c-8.1-9.8-15.5-20.2-22.1-31.2l-4.7-8.1c-6.1-11-11.4-22.4-15.8-34.3c-3.2-8.7-.5-18.4 6.4-24.6l43.3-39.4C64.6 273.1 64 264.6 64 256s.6-17.1 1.7-25.4L22.4 191.2c-6.9-6.2-9.6-15.9-6.4-24.6c4.4-11.9 9.7-23.3 15.8-34.3l4.7-8.1c6.6-11 14-21.4 22.1-31.2c5.9-7.2 15.7-9.6 24.5-6.8l55.7 17.7c13.4-10.3 28.2-18.9 44-25.4l12.5-57.1c2-9.1 9-16.3 18.2-17.8C227.3 1.2 241.5 0 256 0s28.7 1.2 42.5 3.5c9.2 1.5 16.2 8.7 18.2 17.8l12.5 57.1c15.8 6.5 30.6 15.1 44 25.4l55.7-17.7c8.8-2.8 18.6-.3 24.5 6.8c8.1 9.8 15.5 20.2 22.1 31.2l4.7 8.1c6.1 11 11.4 22.4 15.8 34.3zM256 336a80 80 0 1 0 0-160 80 80 0 1 0 0 160z" />
+                </svg>
+
+                <svg class="setting-icon setting-icon2" width="60px" fill="white" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512">
+                    <path
+                        d="M495.9 166.6c3.2 8.7 .5 18.4-6.4 24.6l-43.3 39.4c1.1 8.3 1.7 16.8 1.7 25.4s-.6 17.1-1.7 25.4l43.3 39.4c6.9 6.2 9.6 15.9 6.4 24.6c-4.4 11.9-9.7 23.3-15.8 34.3l-4.7 8.1c-6.6 11-14 21.4-22.1 31.2c-5.9 7.2-15.7 9.6-24.5 6.8l-55.7-17.7c-13.4 10.3-28.2 18.9-44 25.4l-12.5 57.1c-2 9.1-9 16.3-18.2 17.8c-13.8 2.3-28 3.5-42.5 3.5s-28.7-1.2-42.5-3.5c-9.2-1.5-16.2-8.7-18.2-17.8l-12.5-57.1c-15.8-6.5-30.6-15.1-44-25.4L83.1 425.9c-8.8 2.8-18.6 .3-24.5-6.8c-8.1-9.8-15.5-20.2-22.1-31.2l-4.7-8.1c-6.1-11-11.4-22.4-15.8-34.3c-3.2-8.7-.5-18.4 6.4-24.6l43.3-39.4C64.6 273.1 64 264.6 64 256s.6-17.1 1.7-25.4L22.4 191.2c-6.9-6.2-9.6-15.9-6.4-24.6c4.4-11.9 9.7-23.3 15.8-34.3l4.7-8.1c6.6-11 14-21.4 22.1-31.2c5.9-7.2 15.7-9.6 24.5-6.8l55.7 17.7c13.4-10.3 28.2-18.9 44-25.4l12.5-57.1c2-9.1 9-16.3 18.2-17.8C227.3 1.2 241.5 0 256 0s28.7 1.2 42.5 3.5c9.2 1.5 16.2 8.7 18.2 17.8l12.5 57.1c15.8 6.5 30.6 15.1 44 25.4l55.7-17.7c8.8-2.8 18.6-.3 24.5 6.8c8.1 9.8 15.5 20.2 22.1 31.2l4.7 8.1c6.1 11 11.4 22.4 15.8 34.3zM256 336a80 80 0 1 0 0-160 80 80 0 1 0 0 160z" />
+                </svg>
+
+                <svg class="setting-icon setting-icon3" width="87px" fill="white" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512">
+                    <path
+                        d="M495.9 166.6c3.2 8.7 .5 18.4-6.4 24.6l-43.3 39.4c1.1 8.3 1.7 16.8 1.7 25.4s-.6 17.1-1.7 25.4l43.3 39.4c6.9 6.2 9.6 15.9 6.4 24.6c-4.4 11.9-9.7 23.3-15.8 34.3l-4.7 8.1c-6.6 11-14 21.4-22.1 31.2c-5.9 7.2-15.7 9.6-24.5 6.8l-55.7-17.7c-13.4 10.3-28.2 18.9-44 25.4l-12.5 57.1c-2 9.1-9 16.3-18.2 17.8c-13.8 2.3-28 3.5-42.5 3.5s-28.7-1.2-42.5-3.5c-9.2-1.5-16.2-8.7-18.2-17.8l-12.5-57.1c-15.8-6.5-30.6-15.1-44-25.4L83.1 425.9c-8.8 2.8-18.6 .3-24.5-6.8c-8.1-9.8-15.5-20.2-22.1-31.2l-4.7-8.1c-6.1-11-11.4-22.4-15.8-34.3c-3.2-8.7-.5-18.4 6.4-24.6l43.3-39.4C64.6 273.1 64 264.6 64 256s.6-17.1 1.7-25.4L22.4 191.2c-6.9-6.2-9.6-15.9-6.4-24.6c4.4-11.9 9.7-23.3 15.8-34.3l4.7-8.1c6.6-11 14-21.4 22.1-31.2c5.9-7.2 15.7-9.6 24.5-6.8l55.7 17.7c13.4-10.3 28.2-18.9 44-25.4l12.5-57.1c2-9.1 9-16.3 18.2-17.8C227.3 1.2 241.5 0 256 0s28.7 1.2 42.5 3.5c9.2 1.5 16.2 8.7 18.2 17.8l12.5 57.1c15.8 6.5 30.6 15.1 44 25.4l55.7-17.7c8.8-2.8 18.6-.3 24.5 6.8c8.1 9.8 15.5 20.2 22.1 31.2l4.7 8.1c6.1 11 11.4 22.4 15.8 34.3zM256 336a80 80 0 1 0 0-160 80 80 0 1 0 0 160z" />
+                </svg>
+
+                <h1 class="h1-design animate__animated animate__fadeInLeft">Frontend</h1>
+                <svg class="pointer animate__animated animate__tada" width="20px" fill="white"
+                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                    <path
+                        d="M0 55.2L0 426c0 12.2 9.9 22 22 22c6.3 0 12.4-2.7 16.6-7.5L121.2 346l58.1 116.3c7.9 15.8 27.1 22.2 42.9 14.3s22.2-27.1 14.3-42.9L179.8 320l118.1 0c12.2 0 22.1-9.9 22.1-22.1c0-6.3-2.7-12.3-7.4-16.5L38.6 37.9C34.3 34.1 28.9 32 23.2 32C10.4 32 0 42.4 0 55.2z" />
+                </svg>
+
+                <h2 class="h2-design animate__animated animate__fadeInRight">Developer</h2>
+                <h1 class="with-design animate__pulse">With</h1>
+
+                <button id="name-button" type="button" class="border-name btn btn-outline rounded-0">
+                    <h1 class="name-design">
+                        <span>S</span><span>A</span><span>F</span><span>A</span><span>A</span>
+                    </h1>
+                </button>
+
+                <svg class="note-icon" width="200px" fill="white" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512">
+                    <path transform="scale(-1, 1) translate(-512, 0)"
+                        d="M123.6 391.3c12.9-9.4 29.6-11.8 44.6-6.4c26.5 9.6 56.2 15.1 87.8 15.1c124.7 0 208-80.5 208-160s-83.3-160-208-160S48 160.5 48 240c0 32 12.4 62.8 35.7 89.2c8.6 9.7 12.8 22.5 11.8 35.5c-1.4 18.1-5.7 34.7-11.3 49.4c17-7.9 31.1-16.7 39.4-22.7zM21.2 431.9c1.8-2.7 3.5-5.4 5.1-8.1c10-16.6 19.5-38.4 21.4-62.9C17.7 326.8 0 285.1 0 240C0 125.1 114.6 32 256 32s256 93.1 256 208s-114.6 208-256 208c-37.1 0-72.3-6.4-104.1-17.9c-11.9 8.7-31.3 20.6-54.3 30.6c-15.1 6.6-32.3 12.6-50.1 16.1c-.8 .2-1.6 .3-2.4 .5c-4.4 .8-8.7 1.5-13.2 1.9c-.2 0-.5 .1-.7 .1c-5.1 .5-10.2 .8-15.3 .8c-6.5 0-12.3-3.9-14.8-9.9c-2.5-6-1.1-12.8 3.4-17.4c4.1-4.2 7.8-8.7 11.3-13.5c1.7-2.3 3.3-4.6 4.8-6.9l.3-.5z" />
+                    <text x="140" y="210" font-family="Arial" font-size="42" fill="white">click here to</text>
+                    <text x="120" y="280" font-family="Arial" font-size="42" fill="white">know who i am</text>
+                </svg>
+
+                <div class="line-div rounded-pill mt-3 animate__animated animate__fadeInLeft"></div>
+
+                <div class="click-container horizontal-animation">
+                    <svg class="arrows-rotate-svg" width="50px" fill="pink" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512">
+                        <path
+                            d="M105.1 202.6c7.7-21.8 20.2-42.3 37.8-59.8c62.5-62.5 163.8-62.5 226.3 0L386.3 160 352 160c-17.7 0-32 14.3-32 32s14.3 32 32 32l111.5 0c0 0 0 0 0 0l.4 0c17.7 0 32-14.3 32-32l0-112c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 35.2L414.4 97.6c-87.5-87.5-229.3-87.5-316.8 0C73.2 122 55.6 150.7 44.8 181.4c-5.9 16.7 2.9 34.9 19.5 40.8s34.9-2.9 40.8-19.5zM39 289.3c-5 1.5-9.8 4.2-13.7 8.2c-4 4-6.7 8.8-8.1 14c-.3 1.2-.6 2.5-.8 3.8c-.3 1.7-.4 3.4-.4 5.1L16 432c0 17.7 14.3 32 32 32s32-14.3 32-32l0-35.1 17.6 17.5c0 0 0 0 0 0c87.5 87.4 229.3 87.4 316.7 0c24.4-24.4 42.1-53.1 52.9-83.8c5.9-16.7-2.9-34.9-19.5-40.8s-34.9 2.9-40.8 19.5c-7.7 21.8-20.2 42.3-37.8 59.8c-62.5 62.5-163.8 62.5-226.3 0l-.1-.1L125.6 352l34.4 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L48.4 288c-1.6 0-3.2 .1-4.8 .3s-3.1 .5-4.6 1z" />
+                    </svg>
+                    <div class="click rounded-pill">
+                        <button type="button"
+                            class="inside-circle-click btn btn-warning horizontal-Text-animation">Click
+                            here</button>
+                        <a href="./CV.html" target="_blank">
+                            <button type="button" class=" inside-circle-click2 rounded-pill btn btn-warning text-white d-flex flex-column
+                                    justify-content-center align-items-center d-none">
+                                <span class="horizontal-Text-animation pe-3">Open</span>
+                                <span class="horizontal-Text-animation">my</span>
+                                <span class="horizontal-Text-animation text-dark fw-bold ps-2">CV</span>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+
+                <script>
+                    const sound = document.getElementById('sound');
+
+                    /*document.querySelector('.circle').addEventListener('animationstart', () => {
+                        sound.play();
+                    });*/
+
+                    document.querySelector('.inside-circle-click').addEventListener('click', function () { //click is mean the type is click
+
+                        // Add the animation class to the first button
+                        this.classList.add('up-down-animation');
+
+                        // Wait for the animation to complete before showing the second button
+                        this.addEventListener('animationend', function () {
+
+                            // Show the second button
+                            document.querySelector('.inside-circle-click2').classList.remove('d-none');
+                        }, { once: true }); // { once: true } ensures the event listener is called only once
+                    });
+                </script>
+                
+                <div class="arc-container">
+                    <svg class="star star-1" width="6px" fill="yellow" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 576 512">
+                        <path
+                            d="M287.9 0c9.2 0 17.6 5.2 21.6 13.5l68.6 141.3 153.2 22.6c9 1.3 16.5 7.6 19.3 16.3s.5 18.1-5.9 24.5L433.6 328.4l26.2 155.6c1.5 9-2.2 18.1-9.7 23.5s-17.3 6-25.3 1.7l-137-73.2L151 509.1c-8.1 4.3-17.9 3.7-25.3-1.7s-11.2-14.5-9.7-23.5l26.2-155.6L31.1 218.2c-6.5-6.4-8.7-15.9-5.9-24.5s10.3-14.9 19.3-16.3l153.2-22.6L266.3 13.5C270.4 5.2 278.7 0 287.9 0zm0 79L235.4 187.2c-3.5 7.1-10.2 12.1-18.1 13.3L99 217.9 184.9 303c5.5 5.5 8.1 13.3 6.8 21L171.4 443.7l105.2-56.2c7.1-3.8 15.6-3.8 22.6 0l105.2 56.2L384.2 324.1c-1.3-7.7 1.2-15.5 6.8-21l85.9-85.1L358.6 200.5c-7.8-1.2-14.6-6.1-18.1-13.3L287.9 79z" />
+                    </svg>
+                    <svg class="star star-2" width="10px" fill="pink" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 576 512">
+                        <path
+                            d="M287.9 0c9.2 0 17.6 5.2 21.6 13.5l68.6 141.3 153.2 22.6c9 1.3 16.5 7.6 19.3 16.3s.5 18.1-5.9 24.5L433.6 328.4l26.2 155.6c1.5 9-2.2 18.1-9.7 23.5s-17.3 6-25.3 1.7l-137-73.2L151 509.1c-8.1 4.3-17.9 3.7-25.3-1.7s-11.2-14.5-9.7-23.5l26.2-155.6L31.1 218.2c-6.5-6.4-8.7-15.9-5.9-24.5s10.3-14.9 19.3-16.3l153.2-22.6L266.3 13.5C270.4 5.2 278.7 0 287.9 0zm0 79L235.4 187.2c-3.5 7.1-10.2 12.1-18.1 13.3L99 217.9 184.9 303c5.5 5.5 8.1 13.3 6.8 21L171.4 443.7l105.2-56.2c7.1-3.8 15.6-3.8 22.6 0l105.2 56.2L384.2 324.1c-1.3-7.7 1.2-15.5 6.8-21l85.9-85.1L358.6 200.5c-7.8-1.2-14.6-6.1-18.1-13.3L287.9 79z" />
+                    </svg>
+                    <svg class="star star-3" width="15" fill="white" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 576 512">
+                        <path
+                            d="M287.9 0c9.2 0 17.6 5.2 21.6 13.5l68.6 141.3 153.2 22.6c9 1.3 16.5 7.6 19.3 16.3s.5 18.1-5.9 24.5L433.6 328.4l26.2 155.6c1.5 9-2.2 18.1-9.7 23.5s-17.3 6-25.3 1.7l-137-73.2L151 509.1c-8.1 4.3-17.9 3.7-25.3-1.7s-11.2-14.5-9.7-23.5l26.2-155.6L31.1 218.2c-6.5-6.4-8.7-15.9-5.9-24.5s10.3-14.9 19.3-16.3l153.2-22.6L266.3 13.5C270.4 5.2 278.7 0 287.9 0zm0 79L235.4 187.2c-3.5 7.1-10.2 12.1-18.1 13.3L99 217.9 184.9 303c5.5 5.5 8.1 13.3 6.8 21L171.4 443.7l105.2-56.2c7.1-3.8 15.6-3.8 22.6 0l105.2 56.2L384.2 324.1c-1.3-7.7 1.2-15.5 6.8-21l85.9-85.1L358.6 200.5c-7.8-1.2-14.6-6.1-18.1-13.3L287.9 79z" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+        <!-- The Modal -->
+        <div id="about-me" class="modal">
+            <span class="close">&times;</span>
+
+            <!-- About Me Content -->
+            <div class="about-container">
+                <!-- Image section -->
+                <div class="image-div">
+                    <div class="image-div-content">
+                        <img src="./assets/images/safa.png" alt="Profile Image" class="about-image">
+                        <p class="text-center"
+                            style="padding-top: 200px; font-size: 27px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                            Safaa <br /> Fahmawi</p>
+                        <hr>
+                        <p class="text-center"
+                            style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 18px;">
+                            [ Frontend Developer ]</p>
+
+                        <div style="height: 25px; width: 100%; background-color: rgb(243, 225, 242);"></div>
+                    </div>
+                </div>
+
+                <!-- Text section -->
+                <div class="about-text">
+                    <h1>Hello!</h1>
+                    <h2>Here's who I am & what I do</h2>
+                    <button type="button" class="btn btn-outline"></button>
+                    <p>
+                        Hi! I'm [Engineer Safaa], my age is <span id="age"></span> years old, a passionate web developer
+                        with experience in
+                        front-end and back-end
+                        technologies.
+                        I enjoy creating interactive and visually appealing websites. My expertise includes HTML, CSS,
+                        JavaScript,
+                        and frameworks like Vue and Bootstrap. When I'm not coding, I love exploring new technologies
+                        and
+                        improving
+                        my skills.
+                    </p>
+
+                    <script>
+                        function calculateAge(birthYear, birthMonth) {
+                            const today = new Date();
+                            let age = today.getFullYear() - birthYear;
+
+                            // Check if the current month is before or after the birth month
+                            const currentMonth = today.getMonth() + 1; // getMonth() returns 0-11, so we add 1
+                            if (currentMonth < birthMonth || (currentMonth === birthMonth && today.getDate() < 7)) {
+                                age--; // If birthday hasn't passed yet this year, subtract 1 from age
+                            }
+
+                            return age;
+                        }
+               
+                        const birthYear = 2001;
+                        const birthMonth = 7; // July
+                        const age = calculateAge(birthYear, birthMonth);
+
+                        document.getElementById('age').textContent = age;
+                    </script>
+
+                    <script>
+                        // Toggle modal visibility on button click
+                        document.getElementById("name-button").addEventListener("click", function () {
+                            const template = document.getElementById("about-me");
+                            template.style.display = (template.style.display === "none" || template.style.display === "") ? "block" : "none";
+                        });
+
+                        // Get the close button
+                        const closeBtn = document.getElementsByClassName("close")[0];
+
+                        // Close the modal when the user clicks on the close button (X)
+                        closeBtn.onclick = function () {
+                            const modal = document.getElementById("about-me");
+                            modal.style.display = "none";
+                        }
+
+                        // Close the modal when clicking outside of the modal content
+                        window.onclick = function (event) {
+                            const modal = document.getElementById("about-me");
+                            if (event.target == modal) {
+                                modal.style.display = "none";
+                            }
+                        }
+                    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

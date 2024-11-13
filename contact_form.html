@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/Bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/CSS/contactForm-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <title>Contact Form</title>
+</head>
+
+<body>
+
+    <div class="container vh-100">
+
+        <div class="basic-form bg-white d-flex">
+
+            <form action="mailto:fahmawisafa2001@gmail.com" method="post" enctype="multipart/form-data"
+                class="content-form small">
+
+                <h2 class="mb-4">Contact form with <span class="header-name">Safa' Fahmawi</span></h2>
+
+                <div class="d-flex gap-2">
+                    <input type="text" name="first_name" placeholder="Enter your First name" value=""
+                        class="input-form w-50 ps-2 mb-2" required>
+                    <input type="text" name="last_name" placeholder="Enter your Last name" value=""
+                        class="input-form w-50 ps-2 mb-2" required>
+                </div>
+
+                <div>
+                    <input type="email" name="from_email" placeholder="Enter your email"
+                        class="input-form w-50 ps-2 mb-3" required>
+                </div>
+
+                <div>
+                    <label class="label-form mb-2 fw-bold">[ You can Upload a file containing all the details:
+                        ]</label>
+                    <input type="file" name="detailsfile" value="detailsfile" class="file-input">
+                </div>
+
+                <div>
+                    <label class="label-form mt-3 mb-2 fw-bold">[ Message: ]</label>
+                    <div><textarea
+                            placeholder="You can write any note on the CV, whether good or bad, or anything else."
+                            rows="5" cols="70" maxlength="1000"></textarea></div>
+                </div>
+
+                <button type="submit" class="btn-form btn btn-outline mt-2 w-25">Submit</button>
+            </form>
+
+            <div class="gif-form h-100">
+                    <div class="color-div">
+                        <img class="gif-1 animate__animated animate__slideInLeft" src="./assets/images/gif1.gif">
+                        <img class="gif-2 animate__animated animate__slideInRight" src="./assets/images/gif2.gif">
+                    </div>
+                    <div class="color-div-2"></div>
+                    <div class="color-div-3"></div>
+                    <div class="color-div-4"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

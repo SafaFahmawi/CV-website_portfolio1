@@ -1,0 +1,598 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    position: relative;
+    width: 50vmin;
+    height: 50vmin;
+}
+
+.circle {
+    position: absolute;
+    border: 5px solid;
+    opacity: 0;
+    animation: pulse 1s infinite, disappear 1s forwards;
+}
+
+/* Styles for the circles with different sizes and colors */
+.circle:nth-child(1) {
+    width: 100%;
+    height: 100%;
+    margin-left: 400px;
+    border-color: #ff5900;
+    box-shadow: -10px -10px 30px rgba(253, 101, 0, 0.611);
+    animation-delay: 1s, 2s;
+}
+
+.circle:nth-child(2) {
+    width: 80%;
+    height: 80%;
+    margin-left: 200px;
+    border-color: #f200ff;
+    box-shadow: -10px -10px 30px rgba(228, 0, 253, 0.512);
+    animation-delay: 2.5s, 3s;
+}
+
+.circle:nth-child(3) {
+    width: 60%;
+    height: 60%;
+    margin-left: 50px;
+    border-color: #FFD700;
+    box-shadow: -10px -10px 30px rgba(253, 215, 0, 0.462);
+    animation-delay: 3.5s, 4s;
+}
+
+.circle:nth-child(4) {
+    width: 40%;
+    height: 40%;
+    margin-left: -70px;
+    border-color: #00ff00;
+    box-shadow: -10px -10px 30px rgba(0, 253, 51, 0.474);
+    animation-delay: 4.5s, 5s;
+}
+
+.circle:nth-child(5) {
+    width: 20%;
+    height: 20%;
+    margin-left: -150px;
+    border-color: #00BFFF;
+    box-shadow: -10px -10px 30px rgba(0, 240, 253, 0.484);
+    animation-delay: 5.5s, 6s;
+}
+
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 0.3;
+    }
+
+    50% {
+        transform: scale(1.5);
+        opacity: 0.2;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 0.1;
+    }
+}
+
+@keyframes disappear {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+/**************************** Final design styling *****************************/
+
+.final-design {
+    position: absolute;
+    width: 50vmin;
+    height: 50vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 24px;
+    /*opacity: 0.2;
+    animation: reveal 0.5s forwards;
+    animation-delay: 7s;*/
+    /* Delay to match the end of circle animation */
+}
+
+@keyframes reveal {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.design-container {
+    margin-top: 100px;
+    position: relative;
+}
+
+.setting-icon {
+    position: relative;
+    animation: rotate 5s linear infinite;
+}
+
+.setting-icon1 {
+    right: 445px;
+    fill: #d064be;
+}
+
+.setting-icon2 {
+    right: 480px;
+    fill: #9ddd1c;
+}
+
+.setting-icon3 {
+    top: 90px;
+    right: 600px;
+    fill: #4bbb6f;
+}
+
+.h1-design {
+    height: 5vmin;
+    font-size: 80px;
+    font-weight: bold;
+    border-left: 5px double #e204f6;
+    animation-delay: 1s;
+}
+
+.pointer {
+    position: absolute;
+    left: 350px;
+    top: 180px;
+    fill: #e204f6;
+}
+
+.h2-design {
+    font-size: 47px;
+    width: 80vmin;
+    height: 2vmin;
+    margin-top: 65px;
+    animation-delay: 2s;
+}
+
+.with-design {
+    font-size: 60px;
+    width: 80vmin;
+    height: 3vmin;
+    margin-top: 40px;
+    color: rgb(238, 85, 8);
+    animation-duration: 5s;
+}
+
+.border-name {
+    border: 2px dashed rgb(240, 216, 216);
+    width: 200px;
+    height: 80px;
+    margin-top: 65px;
+    padding-left: 20px;
+    position: relative;
+    animation: rotateBorder 4s linear;
+}
+
+.border-name:hover {
+    background-color: #d3a1d82f;
+    border: 2px dashed rgb(240, 216, 216);
+}
+
+/* Animation to rotate the border like a clock */
+@keyframes rotateBorder {
+    0% {
+        transform: rotate(180deg);
+    }
+
+    100% {
+        transform: rotate(180deg);
+    }
+}
+
+.name-design {
+    margin-top: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    letter-spacing: 5px;
+    font-size: 32px;
+}
+
+.name-design span {
+    display: inline-block;
+    opacity: 0;
+    animation: fadeInLetter 1s forwards, slideInLeft 3s forwards;
+    /* The basic animation for each letter */
+}
+
+@keyframes fadeInLetter {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+        /* You can add a small vertical movement */
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+        /* Ends in the original position */
+    }
+
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(100%);
+        /* Start off-screen from the left */
+    }
+
+    to {
+        transform: translateX(0);
+        /* End in the original position */
+        color: #6fd4b4;
+    }
+}
+
+/* Applying staggered delays to each letter */
+.name-design span:nth-child(1) {
+    animation-delay: 1s;
+    color: #cd1cdd;
+}
+
+.name-design span:nth-child(2) {
+    animation-delay: 1.5s;
+    color: #1cb0dd;
+}
+
+.name-design span:nth-child(3) {
+    animation-delay: 2s;
+    color: #dddd1c;
+}
+
+.name-design span:nth-child(4) {
+    animation-delay: 2.5s;
+    color: #3c1cdd;
+}
+
+.name-design span:nth-child(5) {
+    animation-delay: 3s;
+    color: #ce2323;
+}
+
+.note-icon {
+    position: absolute;
+    right: 600px;
+    bottom: 270px;
+    fill: #a7c0c9;
+    display: none;
+}
+
+/* Show the SVG when the button is hovered */
+#name-button:hover+.note-icon {
+    display: block;
+}
+
+.container-click {
+    position: relative;
+}
+
+.horizontal-animation {
+    animation: horizontalMove2 1s ease-in-out forwards;
+    /* `forwards` keeps the final position */
+}
+
+.click {
+    width: 70px;
+    height: 200px;
+    border: 3px inset rgb(8, 216, 235);
+    position: relative;
+    left: 350px;
+    bottom: 190px;
+    overflow: hidden;
+    animation: horizontalMove 3s ease-in-out;
+}
+
+@keyframes horizontalMove {
+    0% {
+        transform: translateY(0) rotate(360deg);
+    }
+
+    50% {
+        transform: translateY(180px);
+        /* Adjust the distance of the animation */
+    }
+
+    100% {
+        transform: translateY(0) rotate(270deg);
+    }
+}
+
+@keyframes horizontalMove2 {
+    from {
+        transform: translateX(0) translateY(0);
+    }
+
+    to {
+        transform: translateX(350px) translateY(-150px) rotate(270deg);
+        /* Adjust the distance of the animation */
+    }
+}
+
+@keyframes horizontalTextMove {
+    from {
+        transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(90deg);
+    }
+}
+
+.horizontal-Text-animation {
+    animation: horizontalTextMove 1s linear forwards;
+}
+
+.inside-circle-click {
+    position: absolute;
+    height: 50px;
+    width: 52px;
+    border-radius: 50%;
+    background-color: #dd601c;
+    box-shadow: -10px -10px 80px rgb(255, 183, 0);
+    top: 8px;
+    left: 6.5px;
+    color: white;
+    font-size: 12px;
+}
+
+.up-down-animation {
+    animation: upDown 1s ease-in-out forwards;
+}
+
+@keyframes upDown {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(130px);
+        /* Move down */
+    }
+}
+
+.inside-circle-click2 {
+    position: absolute;
+    height: 180px;
+    width: 52px;
+    background-color: #dd601c;
+    top: 8px;
+    left: 6.5px;
+}
+
+.arrows-rotate-svg {
+    position: absolute;
+    bottom: 153%;
+    left: 69%;
+    animation: rotate 3s linear infinite;
+}
+
+@keyframes rotate {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    to {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+.line-div {
+    width: 50%;
+    height: 50px;
+    position: relative;
+    background: linear-gradient(to left, rgb(123, 38, 148), rgb(219, 135, 67), rgb(171, 171, 84), rgb(32, 105, 109));
+    right: 30px;
+    border: 1px solid rgb(189, 215, 217);
+}
+
+.arc-container {
+    position: relative;
+    bottom: 190px;
+}
+
+.star {
+    position: absolute;
+    animation: rotateSelf 1s linear infinite;
+}
+
+.star-1 {
+    right: 101%;
+    bottom: -1px;
+    animation-duration: 3s;
+    /* Control individual star rotation speed */
+}
+
+.star-2 {
+    right: 104%;
+    bottom: 5px;
+    animation-duration: 3.2s;
+}
+
+.star-3 {
+    right: 105%;
+    bottom: 27px;
+    animation-duration: 3.3s;
+}
+
+/* Keyframes for rotating each star around its own center */
+@keyframes rotateSelf {
+    0% {
+        transform: translate(-50%, 0) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(-50%, 0) rotate(360deg);
+    }
+}
+
+/* Add animation */
+@keyframes zoomIn {
+    from {
+        transform: scale(0.5);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+/* Modal about me style */
+.image-about1 {
+    position: relative;
+    left: 23%;
+    top: 3%;
+}
+
+.image-about2 {
+    margin-left: 735px;
+}
+
+/* Modal container */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+/* Modal content */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Close button */
+.close {
+    position: absolute;
+    top: 6px;
+    right: 35px;
+    color: rgb(224, 206, 224);
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Flex container for about section */
+.about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 75%;
+    height: 95%;
+    margin: auto;
+}
+
+.image-div {
+    position: relative;
+    right: 30px;
+    height: 107%;
+    width: 60%;
+    background-color: rgb(155, 156, 204);
+}
+
+.image-div-content {
+    position: relative;
+    left: 270px;
+    top: 110px;
+    /*background: linear-gradient(to top, rgba(0, 0, 0, 0.385), rgb(203, 145, 207));*/
+    background-color: rgb(206, 157, 210);
+    box-shadow: -10px 10px 20px rgba(0, 0, 0, 0.284);
+    width: 60%;
+    height: 65%;
+}
+
+/* About image styling */
+.about-image {
+    position: absolute;
+    left: 75px;
+    top: 30px;
+    width: 50%;
+    border-radius: 50%;
+}
+
+/* About text section */
+.about-text {
+    width: 60%;
+    margin-left: 50px;
+    margin-bottom: 10px;
+}
+
+.about-text h1 {
+    position: relative;
+    margin-bottom: -7px;
+    right: 7px;
+    color: #000000;
+    font-size: 130px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.about-text h2 {
+    color: #403b3b;
+}
+
+.about-text p {
+    color: #555;
+    font-size: 16px;
+    padding-right: 100px;
+    text-align: justify;
+}
+
+hr {
+    width: 50%;
+    /* Controls the width of the hr */
+    height: 5px;
+    /* Controls the thickness */
+    background-color: #1f616e;
+    /* Sets the color */
+    border: none;
+    /* Removes the default border */
+    margin: 20px auto;
+    /* Adds space above and below, centers the hr */
+    border-radius: 10px;
+    /* Rounds the edges */
+}

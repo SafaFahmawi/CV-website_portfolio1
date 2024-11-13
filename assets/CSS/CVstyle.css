@@ -1,0 +1,894 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.container {
+    margin: 0;
+}
+
+/*******************************************************************************************/
+
+.container-header {
+    height: 100vh;
+    width: 100vw;
+    right: 20px;
+    background-color: #efefef;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+}
+
+.image1{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    z-index: 1;
+}
+
+.image2{
+    position: absolute;
+    border-radius: 50%;
+    right: 105px;
+    top: 297px;
+    box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.862);
+    z-index: 1;
+}
+
+.image4{
+    position: absolute;
+    left: 8.3px;
+    bottom: 0px;
+}
+
+.color-div {
+    height: 15%;
+    width: 80%;
+    background-color: #fccf12;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.nav-item:hover {
+    text-decoration: underline;
+}
+
+.circle1 {
+    border-radius: 50%;
+    position: absolute;
+    width: 20vw;
+    height: 20vw;
+    top: 7%;
+    left: 170px;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 1px 1px 20px rgb(0, 0, 0);
+}
+
+.circle2 {
+    border-radius: 50%;
+    width: 17vw;
+    height: 17vw;
+    background-color: #c2ca91;
+    position: absolute;
+    left: 22px;
+    top: 22px;
+    box-shadow: 1px 1px 50px rgb(0, 0, 0);
+}
+
+.safa-img {
+    width: 85%;
+    margin-top: 17px;
+    margin-left: 20px;
+    box-shadow: 1px 1px 20px rgb(0, 0, 0);
+}
+
+#frontend-title {
+    font-size: 25px;
+    color: #000000;
+    visibility: hidden;
+    z-index: 1;
+}
+
+/*****************************************************************************************/
+
+h1 {
+    font-size: 70px;
+    margin-top: 80px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h3 {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.btn-contact {
+    background-color: black;
+    color: white;
+    padding: 10px 30px;
+}
+
+.btn-contact:hover {
+    background-color: #bdb5db;
+    color: black;
+    text-decoration: underline;
+}
+
+h2 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    text-shadow: 4px 4px 4px #3d0735;
+    color: rgb(231, 218, 236);
+}
+
+h4 {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    font-size: 20px;
+    text-shadow: 1px 1px #67185b;
+}
+
+/***********************************************************************/
+
+.card-section{
+    height: 70%;
+    padding-top: 320px;
+}
+
+.card1,
+.card2,
+.card3,
+.card4 {
+    width: 13vw;
+    height: 11vw;
+    position: relative;
+    bottom: 30px;
+    background-color: #0f0e0e;
+    font-family: 'Courier New', Courier, monospace;
+    border: 1px solid rgb(235, 193, 4);
+    z-index: 1;
+}
+
+.card1,
+.card3 {
+    background-color: #dfdfde;
+    border: 1px solid black;
+}
+
+.card2:hover,
+.card4:hover {
+    background-color: #252523;
+    border: 3px outset rgb(68, 71, 56);
+}
+
+.card1:hover,
+.card3:hover {
+    background-color: #fed313;
+    border: 3px outset rgb(0, 0, 0);
+    color: black;
+}
+
+.education-icon-card,
+.skills-icon-card {
+    fill: #000000;;
+}
+
+.training-exp-icon-card,
+.project-icon-card {
+    fill: #fed313;
+}
+
+/************************************ end card section ********************************************/
+
+/* Shared styles */
+
+.aboutme-heading,
+.education-heading,
+.training-exp-heading,
+.explain-skills-heading,
+.explain-projects-heading,
+.social-heading {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+}
+
+/************************************ end header section ******************************************/
+
+.regLef1-aboutme {
+    height: 300px;
+    width: 400px;
+    background-color: #4141441b;
+    border-left: none;
+    border-right: none;
+    position: relative;
+    top: 100px;
+}
+
+/********* end the rectangle left section *********/
+
+.aboutme-info {
+    height: 500px;
+    width: 100%;
+    position: relative;
+    box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.146), -7px -7px 10px rgba(0, 0, 0, 0.133);
+}
+
+.aboutme-heading {
+    font-size: 25px;
+    text-shadow: 1px 1px 1px #000000;
+    margin-top: 50px;
+}
+
+.circle {
+    height: 20px;
+    width: 20px;
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 50%;
+}
+
+.basic-hr {
+    border: 2.2px solid rgb(70, 71, 23);
+    font-weight: bold;
+    width: 100px;
+}
+
+.img-aboutme-div {
+    height: 500px;
+    width: 30%;
+    position: absolute;
+    background-image: url("../images/24.jpeg");
+    background-size: cover;
+}
+
+.aboutme-hr1 {
+    height: 250px;
+    width: 4px;
+    background-color: #7e3406;
+    position: absolute;
+    right: 25px;
+    top: 20px;
+}
+
+.aboutme-hr2 {
+    height: 250px;
+    width: 4px;
+    background-color: #1d5951;
+    position: absolute;
+    right: 17px;
+    top: 200px;
+}
+
+.aboutme-par {
+    font-size: 18px;
+    padding: 100px;
+    padding-top: 10px;
+    padding-left: 360px;
+    line-height: 2.5;
+    text-align: justify;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/********* end the about me section ********/
+.regRig1-aboutme {
+    height: 300px;
+    width: 400px;
+    background-color: #4141441b;
+    border-Right: none;
+    border-left: none;
+    position: relative;
+    top: 120px;
+}
+
+/********* end the rectangle right section *********/
+
+/************************************ end about me section ******************************************/
+.content-education {
+    position: relative;
+    width: inherit;
+    height: 700px;
+    margin-top: 150px;
+    background-image: url("../images/19.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    /* Centers the image both horizontally and vertically */
+    background-attachment: fixed;
+    /* Keeps the background fixed when scrolling (optional) */
+    display: none;
+}
+
+.education-par {
+    text-align: justify;
+    padding: 200px;
+    line-height: 2.5;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    word-spacing: 5px;
+}
+
+.custom-hr1 {
+    width: 100px;
+    border: 5px solid rgb(118, 49, 6);
+    margin-left: 50px;
+}
+
+.custom-hr2 {
+    width: 10px;
+    border: 5px solid rgb(67, 12, 135);
+}
+
+/******************************* end education section ********************************************/
+
+.content-training {
+    position: relative;
+    width: inherit;
+    height: 700px;
+    margin-top: 150px;
+    background-image: url("../images/38.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    /* Centers the image both horizontally and vertically */
+    background-attachment: fixed;
+    display: none;
+}
+
+.card-training {
+    width: 80%;
+    height: 17%;
+}
+
+.img-training1 {
+    position: absolute;
+    left: 0px;
+    top: 50px;
+}
+
+.img-training2 {
+    position: absolute;
+    right: 50px;
+    top: 270px;
+    transform: rotate(-7deg);
+}
+
+.img-training3 {
+    position: absolute;
+    right: 190px;
+    top: 130px;
+    transform: rotate(330deg);
+    /* rotates the image by degrees */
+}
+
+/******************************* end training-exp section *********************************************/
+
+.skills-content {
+    position: relative;
+    margin-top: 15%;
+    height: 700px;
+    background-image: url("../images/52.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: none;
+}
+
+.card {
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    bottom: 0px;
+}
+
+.skills-heading{
+    font-size: 65px; 
+    padding-left: 120px;
+}
+
+.personal-card,
+.computer-card,
+.language-card {
+    background-image: url('../images/55.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.personal-title, .computer-title, .language-title{
+    background-color: rgb(225, 198, 189);
+}
+
+.computer-card {
+    position: absolute;
+    height: 60%;
+    left: 380px;
+    bottom: 100px;
+}
+
+.computer-btn {
+    background-color: #b6bee1;
+    font-size: 13px;
+    height: 50px;
+}
+
+.split-btn {
+    height: 50px;
+}
+
+.personal-inside-card1,
+.personal-inside-card2,
+.personal-inside-card3,
+.language-inside-card1,
+.language-inside-card2,
+.language-inside-card3 {
+    position: absolute;
+    top: 95px;
+    right: 15px;
+    width: 90%;
+    height: 65%;
+    background-color: #d1cde3;
+    font-size: 14px;
+}
+
+.personal-inside-card2, .language-inside-card2 {
+    top: 149px;
+}
+
+.personal-inside-card3, .language-inside-card3 {
+    top: 202px;
+}
+
+.skills-img1 {
+    position: absolute;
+    right: 0px;
+    top: 240px;
+}
+
+.skills-img2 {
+    position: absolute;
+    right: 0px;
+    top: 100px;
+    transform: rotate(-20deg);
+}
+
+.computer-inside-card1,
+.computer-inside-card2,
+.computer-inside-card3,
+.computer-inside-card4,
+.computer-inside-card5 {
+    position: absolute;
+    height: 60px;
+    width: 90%;
+    left: 7px;
+    top: 100px;
+}
+
+.computer-inside-card2 {
+    top: 132px;
+}
+
+.computer-inside-card3 {
+    top: 188px;
+}
+
+.computer-inside-card4 {
+    top: 244px;
+}
+
+.computer-inside-card5 {
+    top: 300px;
+}
+
+.language-card{
+    position: absolute;
+    left: 665px; 
+    top: 0px;
+}
+
+/******************* end skills section  *********************************************************/
+
+.projects-content {
+    position: relative;
+    margin-top: 10%;
+    height: 830px;
+    background-image: url("../images/27-3.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: none;
+}
+
+.projects-heading{
+    font-size: 65px; 
+    top: 500px; 
+    right: 60px;
+}
+
+.projects-img{
+    position: absolute;
+    font-size: 65px; 
+    top: 480px; 
+    right: 100px;
+}
+
+.graduation-project {
+    position: absolute;
+    width: 45%;
+    height: 88%;
+    background: linear-gradient(to top, #022b23, #113b342f);
+    top: 49px;
+    left: 48px;
+    font-size: 23px;
+    text-shadow: 10px 10px 20px black;
+    color: white;
+    padding-top: 16%;
+    padding-left: 50px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.353);
+}
+
+.graduation-info {
+    position: absolute;
+    width: 100%;
+    height: 101%;
+    background-color: #022b23;
+    bottom: 0px;
+    left: 0px;
+    animation: slideInFromTop1 2s ease forwards;
+    display: none;
+}
+
+.graduation-project:hover .graduation-info {
+    display: block;
+    cursor: pointer;
+}
+
+.des-par {
+    font-size: 16px;
+    text-align: justify;
+    color: rgb(240, 209, 131);
+}
+
+.todo-project {
+    position: absolute;
+    width: 45%;
+    height: 88%;
+    background: linear-gradient(to top, #22022b, #2c113b2f);
+    top: 49px;
+    left: 780px;
+    font-size: 23px;
+    text-shadow: 10px 10px 20px black;
+    color: white;
+    padding-top: 16%;
+    padding-left: 50px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.353);
+}
+
+.todo-info {
+    position: absolute;
+    width: 100%;
+    height: 101%;
+    background-color: #22022b;
+    bottom: 0px;
+    left: 0px;
+    animation: slideInFromTop1 2s ease forwards;
+    display: none;
+}
+
+.todo-project:hover .todo-info {
+    display: block;
+    cursor: pointer;
+}
+
+@keyframes slideInFromTop1 {
+    0% {
+        bottom: -5px;
+        opacity: 0;
+    }
+
+    100% {
+        top: -1px;
+        opacity: 1;
+    }
+}
+
+.muslim-project {
+    position: absolute;
+    width: 45%;
+    height: 44%;
+    background: linear-gradient(to top, #242b02, #373b112f);
+    top: 430px;
+    left: 400px;
+    font-size: 23px;
+    text-shadow: 10px 10px 20px black;
+    color: white;
+    padding-top: 16%;
+    padding-left: 50px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.353);
+}
+
+.muslim-info {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #242b02;
+    top: 0px;
+    left: 0px;
+    animation: slideInFromTop2 2s ease forwards;
+    display: none;
+}
+
+.muslim-project:hover .muslim-info {
+    display: block;
+    cursor: pointer;
+}
+
+@keyframes slideInFromTop2 {
+    0% {
+        bottom: -100px;
+        opacity: 0;
+    }
+
+    100% {
+        top: -5px;
+        opacity: 1;
+    }
+}
+
+/********************* end projects section ******************************************************/
+
+.footer {
+    height: 460px;
+    margin-top: 8%;
+    /*background-color: #57766b72*/
+    background-color: #8c89a02a;
+}
+
+.container-info {
+    background-color: #000000;
+    height: 460px;
+    width: 450px;
+    border-right: 5px solid #c7d294;
+}
+
+.contact-info {
+    height: 350px;
+    width: 350px;
+    background-color: #ffffff;
+    position: relative;
+    top: 55px;
+    left: 300px;
+    border: 3px inset #7d8116;
+}
+
+.contact-header {
+    font-size: 33px;
+    color: #a9af2e;
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+}
+
+.gmail-info {
+    border: 2px inset #2e2366;
+    width: 300px;
+}
+
+.gmail-info:hover {
+    background-color: #aa9fd46b;
+}
+
+.gmail {
+    color: #28336b;
+    text-decoration: none;
+}
+
+.btn-form-contact {
+    background-color: #c6c780d4;
+    color: black;
+    font-size: 14px;
+}
+
+.btn-form-contact:hover {
+    zoom: 110%;
+    background-color: #9288bb99;
+}
+
+/* social media section */
+
+.social-container {
+    height: 50%;
+    width: 44%;
+    position: relative;
+    bottom: 460px;
+    left: 800px;
+    padding: 250px;
+}
+
+/* The animation code */
+@keyframes example {
+    0% {
+        background-color: rgba(183, 199, 129, 0.321);
+    }
+
+    25% {
+        background-color: rgba(181, 120, 180, 0.302);
+    }
+
+    50% {
+        background-color: rgba(135, 181, 133, 0.29);
+    }
+
+    100% {
+        background-color: rgba(166, 121, 186, 0.298);
+    }
+}
+
+.external-big-circle {
+    height: 42%;
+    width: 30%;
+    position: absolute;
+    border-radius: 50%;
+    top: 175px;
+    animation: example 5s infinite;
+}
+
+.internal-big-circle {
+    height: 79%;
+    width: 80%;
+    background-color: #000000;
+    position: absolute;
+    border-radius: 50%;
+    top: 22px;
+    left: 19.5px;
+    perspective: 1000px;
+    /*box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.479);*/
+}
+
+/* github section */
+
+.external-github,
+.external-linkedin,
+.external-google,
+.external-instegram,
+.external-facebook {
+    height: 14%;
+    width: 10%;
+    background-color: #8c89a02a;
+    border: 4px solid #000000;
+    position: absolute;
+    border-radius: 50%;
+    bottom: 180px;
+    left: 100px;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.225);
+}
+
+.internal-github,
+.internal-facebook,
+.internal-google,
+.internal-linkedin,
+.internal-instegram {
+    height: 80%;
+    width: 80%;
+    background-color: #c7c3dc2a;
+    border: 0;
+    position: absolute;
+    border-radius: 50%;
+    top: 6px;
+    right: 6px;
+    /*box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.398);*/
+}
+
+.social-heading {
+    font-size: 20px;
+    padding-top: 60px;
+    text-shadow: 2px 2px 2px #000000;
+}
+
+.github-svg,
+.facebook-svg,
+.google-svg,
+.linkedin-svg,
+.instegram-svg {
+    position: absolute;
+    bottom: 3.6px;
+    left: 3.6px;
+}
+
+.github-svg:hover {
+    zoom: 80%;
+    bottom: 9px;
+    left: 9px;
+}
+
+/* linkedin section */
+
+.external-linkedin {
+    border: 4px solid #42177f;
+    bottom: 310px;
+    left: 150px;
+}
+
+.linkedin-svg {
+    left: 11px;
+    bottom: 10px;
+    fill: #3b2e7c
+}
+
+.linkedin-svg:hover {
+    zoom: 80%;
+    bottom: 15px;
+    left: 15px;
+}
+
+/* google section */
+
+.external-google {
+    border: 4px solid #7f171e;
+    bottom: 380px;
+    left: 315px;
+}
+
+.google-svg {
+    left: 4.8px;
+    bottom: 5px;
+    fill: #912424
+}
+
+.google-svg:hover {
+    zoom: 85%;
+    bottom: 8px;
+    left: 8px;
+}
+
+/* instegram section */
+
+.external-instegram {
+    border: 4px solid #a1436cea;
+    bottom: 310px;
+    left: 480px;
+}
+
+.instegram-svg {
+    left: 9.5px;
+    bottom: 7px;
+    fill: rgb(175, 29, 104);
+}
+
+.instegram-svg:hover {
+    zoom: 80%;
+    bottom: 13px;
+    left: 15px;
+}
+
+/* facebook section */
+
+.external-facebook {
+    border: 4px solid #42177f;
+    bottom: 180px;
+    left: 527px;
+}
+
+.facebook-svg {
+    bottom: 4.7px;
+    left: 3.7px;
+    fill: #2c2068;
+}
+
+.facebook-svg:hover {
+    zoom: 80%;
+    bottom: 10px;
+    left: 10px;
+}
+
+/******************** end footer section ***********************************************************************/
+
+.btn-arrow {
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    bottom: 5px;
+    left: 10px;
+    z-index: 1;
+    background-color: #000000;
+    border: 1px inset #fed313;
+}

@@ -1,0 +1,139 @@
+/* Full page background styling */
+body,
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* background: linear-gradient(to right, #7f5fff94, #fe7be676);*/
+    /*background: linear-gradient(to right, #26676c6b, #94b26976);*/
+    background-color: #8779bc3f;
+
+    background-size: cover;
+    /* Ensures the image covers the full page */
+    background-position: center;
+    /* Centers the background image */
+    background-repeat: no-repeat;
+    /* Prevents image repetition */
+    background-attachment: fixed;
+    /* Keeps the image fixed during scrolling */
+}
+
+.basic-form {
+    height: 80%;
+    width: 90%;
+    position: relative;
+    top: 75px;
+    left: 60px;
+    box-shadow: -10px -10px 10px rgba(66, 101, 56, 0.421), -20px -20px 10px rgba(66, 85, 135, 0.316);
+}
+
+.gif-1,
+.gif-2 {
+    border-radius: 50%;
+    position: absolute;
+}
+
+.gif-1 {
+    width: 33%;
+    height: 65%;
+    top: 5px;
+    right: 5px;
+    border: 5px outset #649f7d;;
+}
+
+.gif-2 {
+    width: 20%;
+    height: 40%;
+    right: 270px;
+    top: 305px;
+    border: 5px inset #a944bd;
+}
+
+.gif-form {
+    background-color: rgb(79, 74, 149);
+    margin-left: 250px;
+    width: 30%;
+}
+
+.content-form {
+    width: 50%;
+    height: 88%;
+    padding: 37px;
+    padding-top: 25px;
+    position: relative;
+    top: 30px;
+    left: 30px;
+    background-color: rgba(202, 218, 225, 0.307);
+    box-shadow: 5px 5px 10px rgba(73, 24, 179, 0.701), 5px 5px 5px rgb(185, 208, 109);
+}
+
+.header-name {
+    color: rgb(51, 40, 199);
+}
+
+.input-form {
+    height: 35px;
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px solid rgb(39, 123, 137);
+}
+
+input::placeholder {
+    color: rgb(105, 100, 133);
+}
+
+.file-input {
+    background-color: #e2eee7bd;
+    color: #333;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+}
+
+
+.label-form {
+    background-color: rgba(91, 72, 109, 0.234);
+}
+
+.btn-form {
+    background-color: rgba(27, 75, 70, 0.615);
+    background: linear-gradient(to right, rgba(31, 87, 82, 0.615), rgba(48, 50, 173, 0.447));
+    font-size: larger;
+    color: white;
+    font-family: cursive;
+}
+
+.color-div {
+    background-color: #88cba5;
+    background-color: #bebca3;;
+    height: 100%;
+    margin-left: 180px;
+    width: 35%;
+}
+
+.color-div-2, .color-div-3, .color-div-4{
+    background-color: #bebca3c8;
+    position: relative;
+    height: 2%;
+}
+
+.color-div-2{
+    width: 150%;
+    bottom: 20px;
+    right: 177px;
+}
+
+.color-div-3{
+    width: 63%;
+    bottom: 50px;
+    right: -105px;
+}
+
+.color-div-4{
+    width: 45%;
+    bottom: 90px;
+    right: -153px;
+}
